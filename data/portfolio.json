@@ -1,7 +1,7 @@
 {
     "name": "Michael Goboola",
     "headerTaglineOne": "Hi, There 👋",
-    "headerTaglineTwo": "I'm Focused and Enthusiastic, Curious",
+    "headerTaglineTwo": "I'm Enthusiastic and Curious",
     "headerTaglineThree": "Data Scientist and Developer",
     "headerTaglineFour": "based in Kampala Uganda",
     "showCursor": false,
@@ -58,17 +58,31 @@
         "experiences": [
             {
                 "id": "1",
-                "dates": "March 2022 - Present",
+                "dates": "March 2023 - Present",
                 "type": "Full Time",
-                "position": "Frontend Engineer at X",
-                "bullets": "Bullet One, Bullet Two"
+                "position": "Founder | Logit Transporters ",
+                "bullets": "Am tasked with building the company platforms (web and server), Setting up the business paper work, Managing my team to ensure our products are the best on the market, Overseeing the companies financials and be able to set goal for growth"
             },
             {
                 "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-                "dates": "July 2020 - March 2022",
-                "type": "Full Time",
-                "position": "Frontend Engineer at X",
-                "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+                "dates": "April 2022 - Sept 2022",
+                "type": "Hybrid ",
+                "position": "Research Internship | Makerere University ",
+                "bullets": "Using External Datasets (DHS)/ Analysis of Social economic variables that affect secondary school enrollment/ Social Economic factors affecting the secondary school enrollment in Uganda., Using the statistical software (STATA, SPSS) / Did multivariate analysis of variables of interest and modeled in logistic fashion/ Social Economic factors affecting the secondary school enrollment in Uganda."
+            },
+            {
+                "id": "578839d0-fbbb-4ed7-b447-f957b41eb640",
+                "dates": "Feb 2022 -  July 2022",
+                "type": "Part Time",
+                "position": " Intern Software Engineer | Mfeyti",
+                "bullets": "Worked on React storefront for the companies eCommerce project, Worked with Django and Graphql for the server for the eCommerce system, Deployed the services and setup deployment pipelines on AWS using GitHub Actions "
+            },
+            {
+                "id": "5f7d1057-260b-4f8d-84fd-f2e322b6afa0",
+                "dates": "Oct 2020 - Nov2020",
+                "type": "Part Time",
+                "position": "Intern Data Engineer",
+                "bullets": "Worked with Big data platforms like Azure Data bricks, Used Apache spark to analyze big data logs, Worked with kafka Streaming to model streaming logs from a running service"
             }
         ],
         "education": [
@@ -160,14 +174,16 @@
             "HTML5",
             "CSS",
             "Python",
-            "Go"
+            "C#",
+            "C/C++"
         ],
         "frameworks": [
             "React",
             "Typescript",
             "NodeJs",
             "Django",
-            ".NET"
+            ".NET",
+            "Flask"
         ],
         "others": [
             "Figma",
