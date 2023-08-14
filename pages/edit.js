@@ -694,7 +694,7 @@ const Edit = () => {
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{experiences.position}</h1>
                     <Button
-                      // onClick={() => deleteProject(project.id)}
+                      onClick={() => deleteExperience(experiences.id)}
                       type="primary"
                     >
                       Delete
@@ -776,7 +776,7 @@ const Edit = () => {
                   <div className="flex items-center justify-between">
                     <h1 className="text-2xl">{education.universityName}</h1>
                     <Button
-                      // onClick={() => deleteProject(project.id)}
+                      onClick={() => deleteEducation(education.id)}
                       type="primary"
                     >
                       Delete
@@ -835,12 +835,12 @@ const Edit = () => {
             </div>
             <h1>Professional Trainings and Competitions</h1>
             <div className="mt-10">
-              {data.resume.education.map((education, index) => (
-                <div className="mt-5" key={education.id}>
+              {data.resume.professional.map((profession, index) => (
+                <div className="mt-5" key={profession.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{education.universityName}</h1>
+                    <h1 className="text-2xl">{profession.universityName}</h1>
                     <Button
-                      // onClick={() => deleteProject(project.id)}
+                      onClick={() => deleteProfessional(profession.id)}
                       type="primary"
                     >
                       Delete
@@ -850,10 +850,10 @@ const Edit = () => {
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Name</label>
                     <input
-                      value={education.universityName}
+                      value={profession.universityName}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...professional,
                           universityName: e.target.value,
                         })
                       }
@@ -864,10 +864,10 @@ const Edit = () => {
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Dates</label>
                     <input
-                      value={education.universityDate}
+                      value={profession.universityDate}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...professional,
                           universityDate: e.target.value,
                         })
                       }
@@ -878,10 +878,10 @@ const Edit = () => {
                   <div className="flex items-center mt-2">
                     <label className="w-1/5 text-lg opacity-50">Details</label>
                     <textarea
-                      value={education.universityPara}
+                      value={profession.universityPara}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...professional,
                           universityPara: e.target.value,
                         })
                       }
@@ -892,7 +892,7 @@ const Edit = () => {
                 </div>
               ))}
               <div className="my-10">
-                <Button onClick={handleAddEducation} type="primary">
+                <Button onClick={handleAddProfessional} type="primary">
                   Add Training/Competition/Hackerthon +
                 </Button>
               </div>
@@ -900,12 +900,12 @@ const Edit = () => {
             <hr className="my-10"></hr>
             <h1>Affiliations</h1>
             <div className="mt-10">
-              {data.resume.education.map((education, index) => (
-                <div className="mt-5" key={education.id}>
+              {data.resume.affiliations.map((affiliation, index) => (
+                <div className="mt-5" key={affiliation.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{education.universityName}</h1>
+                    <h1 className="text-2xl">{affiliation.universityName}</h1>
                     <Button
-                      // onClick={() => deleteProject(project.id)}
+                      onClick={() => deleteAffiliate(affiliation.id)}
                       type="primary"
                     >
                       Delete
@@ -915,10 +915,10 @@ const Edit = () => {
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Name</label>
                     <input
-                      value={education.universityName}
+                      value={affiliation.universityName}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...affiliations,
                           universityName: e.target.value,
                         })
                       }
@@ -929,10 +929,10 @@ const Edit = () => {
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Dates</label>
                     <input
-                      value={education.universityDate}
+                      value={affiliation.universityDate}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...affiliations,
                           universityDate: e.target.value,
                         })
                       }
@@ -943,10 +943,10 @@ const Edit = () => {
                   <div className="flex items-center mt-2">
                     <label className="w-1/5 text-lg opacity-50">Details</label>
                     <textarea
-                      value={education.universityPara}
+                      value={affiliation.universityPara}
                       onChange={(e) =>
                         handleEditEducation(index, {
-                          ...education,
+                          ...affiliations,
                           universityPara: e.target.value,
                         })
                       }
@@ -957,7 +957,7 @@ const Edit = () => {
                 </div>
               ))}
               <div className="my-10">
-                <Button onClick={handleAddEducation} type="primary">
+                <Button onClick={handleAddAffiliate} type="primary">
                   Add Affiliation +
                 </Button>
               </div>
