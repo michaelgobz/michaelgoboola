@@ -73,50 +73,86 @@
         ],
         "education": [
             {
-                "id": "1",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen "
-            },
-            {
-                "id": "2",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-            },
-            {
                 "id": "f0c024d4-2002-41c9-82b4-cad97297d801",
-                "universityName": "Makerere University",
+                "universityName": "Makerere University |  Bs Quantitative Economics",
                 "universityDate": "2019-2023",
-                "universityPara": "Awesome school over there"
+                "universityPara": "Dissertation: “Effects of foreign direct investments on the economic growth of Uganda”\nSupervisor: Dr Asiimwe John Bosco"
+            },
+            {
+                "id": "89171a55-9c9b-49e9-af37-bf5b1919a815",
+                "universityName": "ALX School (Holberton School) | Software Engineering | Backend Specialization ",
+                "universityDate": "2022-2023",
+                "universityPara": "Project: “RestaurantOne and Swiftmovers Logistics SaaS”\nMentor: Mr. Maarten van Middelaar"
             }
         ],
         "professional": [
             {
                 "id": "1",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+                "universityName": "Zindi Machine Learning Hackerthon",
+                "universityDate": "April 2023 – May 2023",
+                "universityPara": "This hackerthon was supported by Zindi which is aimed at building capacity in machine learning techniques among university students where I participated in designing a model that predicts carbondioxied concertation in the atmosphere in selected African cities. I was second at national level. And 138 out of 310 in Continental Competition"
             },
             {
                 "id": "2",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+                "universityName": "Zindi Data Fest Noise Classification Challenge",
+                "universityDate": "July 2022",
+                "universityPara": "This challenge was part of the Data fest Big data conference where the challenge was to develop a model that classifies different kinds sounds in the Kampala city to tackle noise pollution. I manage to come 13th out of 31, it was an intermediate one where I learnt a lot on how to manipulate sounds into wave forms.k"
+            },
+            {
+                "id": "ae985ad4-1c7d-4db4-892f-009dd5bd7ef3",
+                "universityName": "Macro-Economic Diagnostics IMF Institute of Capacity Development , Edx Harvard Platform",
+                "universityDate": "July 2022- sept 2022",
+                "universityPara": "I learnt about IMF macro-economic analysis tools and government revenue, then BPM6 principles central banks and economic stress techniques, national and external debt management. Did analysis on different economies using their past data to establish their Cooperativeness and ability to grow and productive capacities. This training was part of the IMF Fund Challenge to Train students in Professional tools used in Macro Economic management in Central Banks and Finance Ministries using the BMP6 standard of reporting macro-economic statistics"
+            },
+            {
+                "id": "44cddf6e-2650-4051-bf0a-61664d468154",
+                "universityName": "Azure AI Fundamentals, Microsoft Cooperation",
+                "universityDate": "April 2021 – Sept 2021",
+                "universityPara": "This certification was offered by Microsoft through the university of Calgary where instructors took us through the\nFundamentals of machine learning concepts of supervised, unsupervised, and deep learning techniques. This was evaluated at Pearson certification standard."
+            },
+            {
+                "id": "495b34e4-d800-4636-b2de-4a2cdae1f5f2",
+                "universityName": "Data Engineering, Data Camp",
+                "universityDate": "Aug 2020 – sept 2020",
+                "universityPara": "This certification is offered by Data Camp which trains into intermediate material in data engineering with python and Scala where I did manage to deploy Kafka streaming platforms and then consumed using Apache spark via the python and the Scala API to manage hug data producing system and techniques of dealing with big data."
+            },
+            {
+                "id": "2b6c0461-c2f2-451d-8d7b-a9e40e06ebd6",
+                "universityName": "Machine Learning Specialist in python, Data Camp",
+                "universityDate": "July 2020 – Aug 2020",
+                "universityPara": "This certification is offered by data camp which trains into the intermediate machine learning techniques with some statistical concept like Bayesian Statistics. I managed to do classification on petals of flowers using pictures, using deep learning to identify cats in pictures through a CNN model using keras Library using both R and Python."
+            },
+            {
+                "id": "66e41454-926c-4940-9526-d692b395ba28",
+                "universityName": "GADS Associate Android Specialist, Andela Inc, Google, Pluralsight",
+                "universityDate": "April 2020 – Feb 2021",
+                "universityPara": "This training was about training people into professional android app and library development for course of 1 year.\nIt covered all that is offered by the Java Android SDK to develop better android. Provided associated android specialist certification by google."
+            },
+            {
+                "id": "cdc6e5b9-ee3b-4d63-88c9-4c3cab276172",
+                "universityName": "GADS Associate Cloud Engineer , Andela Inc, Google, Pluralsight",
+                "universityDate": "April 2021 – Dec 2021",
+                "universityPara": "This training was aimed to equip participants with tools and knowledge to able abled to develop applications on the GCP platform, it covered networks, virtual machines, Serverless and Kubernetes container runtime environments. Certification is provided by Google Training done using the Pluralsight professional learning Platforms."
+            },
+            {
+                "id": "a5ab96cd-7621-43d2-9226-5deab4faf7ec",
+                "universityName": "Certified Network Security Specialist(CNSS), ICSI",
+                "universityDate": "June 2020 – July 2020",
+                "universityPara": "This certification is offered by the international cyber security institute in the UK where I learnt how to secure networks and the OSI network model and how to secure organizational data, data protection standards and Policies like the GDPR of the European Union."
             }
         ],
         "affiliations": [
             {
                 "id": "1",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+                "universityName": "The Room",
+                "universityDate": "2022 - Present",
+                "universityPara": "The room organization is the platform that offers young Africans opportunities in space of knowledge acquisition and resources but not limited to Employment opportunities and working spaces to experiment with different business opportunities, am fellow with the room our headquarters are in Johannesburg, S.A"
             },
             {
                 "id": "2",
-                "universityName": "University X",
-                "universityDate": "2016-2020",
-                "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+                "universityName": "Uganda Statistical Society",
+                "universityDate": "2023 - Present",
+                "universityPara": "This is a body that brings together statisticians around Uganda to do things at a professional way. Am a member which provides opportunities and responsibilities to participate to in all organizational activities and contribute where necessary"
             }
         ],
         "languages": [
@@ -131,8 +167,7 @@
             "Typescript",
             "NodeJs",
             "Django",
-            ".NET",
-            ""
+            ".NET"
         ],
         "others": [
             "Figma",

@@ -224,8 +224,6 @@ const Edit = () => {
     })
   }
 
-
-
   const handleAddAffiliate = () => {
     setData({
       ...data,
@@ -244,7 +242,7 @@ const Edit = () => {
     })
   }
 
-  const handleAffiliate = (index, editAffiliate) => {
+  const handleEditAffiliate = (index, editAffiliate) => {
     let copyAffiliate = data.resume.affiliations;
     copyAffiliate[index] = { ...editAffiliate };
     setData({
@@ -852,8 +850,8 @@ const Edit = () => {
                     <input
                       value={profession.universityName}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...professional,
+                        handleEditProfessional(index, {
+                          ...profession,
                           universityName: e.target.value,
                         })
                       }
@@ -866,8 +864,8 @@ const Edit = () => {
                     <input
                       value={profession.universityDate}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...professional,
+                        handleEditProfessional(index, {
+                          ...profession,
                           universityDate: e.target.value,
                         })
                       }
@@ -880,8 +878,8 @@ const Edit = () => {
                     <textarea
                       value={profession.universityPara}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...professional,
+                        handleEditProfessional(index, {
+                          ...profession,
                           universityPara: e.target.value,
                         })
                       }
@@ -917,8 +915,8 @@ const Edit = () => {
                     <input
                       value={affiliation.universityName}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...affiliations,
+                        handleEditAffiliate(index, {
+                          ...affiliation,
                           universityName: e.target.value,
                         })
                       }
@@ -931,8 +929,8 @@ const Edit = () => {
                     <input
                       value={affiliation.universityDate}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...affiliations,
+                        handleEditAffiliate(index, {
+                          ...affiliation,
                           universityDate: e.target.value,
                         })
                       }
@@ -945,8 +943,8 @@ const Edit = () => {
                     <textarea
                       value={affiliation.universityPara}
                       onChange={(e) =>
-                        handleEditEducation(index, {
-                          ...affiliations,
+                        handleEditAffiliate(index, {
+                          ...affiliation,
                           universityPara: e.target.value,
                         })
                       }
