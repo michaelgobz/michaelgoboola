@@ -104,7 +104,7 @@ const Edit = () => {
         {
           id: uuidv4(),
           title: "New Link",
-          link: "www.chetanverma.com",
+          link: "www.example.com",
         },
       ],
     });
@@ -117,6 +117,30 @@ const Edit = () => {
   };
 
   // Resume
+
+  const delateExperience = (id) => {
+    const copyExperiences = data.resume.experiences;
+    copyExperiences = copyExperiences.filter((experience) => experience.id != id)
+    setData({...data.resume, experiences: copyExperiences})
+  }
+
+  const deleteEducation = (id) => {
+    const copyEducation = data.resume.education;
+    copyEducation = copyEducation.filter((education) => education.id != id)
+    setData({...data.resume, education: copyEducation})
+  }
+
+  const deleteProfessional = (id) => {
+    const copyProfessional = data.resume.professional;
+    copyProfessional = copyProfessional.filter((prof) => prof.id != id)
+    setData({...data.resume, professional: copyProfessional})
+  }
+
+  const deleteAffiliate = (id) => {
+    const copyAffiliate = data.resume.affiliations;
+    copyAffiliate = copyAffiliate.filter((affiliate) => affiliate.id != id)
+    setData({...data.resume, affiliations: copyAffiliate})
+  }
 
   const handleAddExperiences = () => {
     setData({
@@ -170,6 +194,62 @@ const Edit = () => {
     setData({
       ...data,
       resume: {...data.resume, education: copyEducation}
+    })
+  }
+
+  const handleAddProfessional = () => {
+    setData({
+      ...data,
+      resume: {
+        ...data.resume,
+        professional: [
+          ...data.resume.professional,
+          {
+            id: uuidv4(),
+            universityName: "Makerere University",
+            universityDate: "2019-2023",
+            universityPara: "Awesome school over there"
+          }
+        ]
+      }
+    })
+  }
+
+  const handleEditProfessional = (index, editProfessional) => {
+    let copyProfessional = data.resume.professional;
+    copyProfessional[index] = { ...editProfessional };
+    setData({
+      ...data,
+      resume: {...data.resume, professional: copyProfessional}
+    })
+  }
+
+
+
+  const handleAddAffiliate = () => {
+    setData({
+      ...data,
+      resume: {
+        ...data.resume,
+        affiliations: [
+          ...data.resume.affiliations,
+          {
+            id: uuidv4(),
+            universityName: "Makerere University",
+            universityDate: "2019-2023",
+            universityPara: "Awesome school over there"
+          }
+        ]
+      }
+    })
+  }
+
+  const handleAffiliate = (index, editAffiliate) => {
+    let copyAffiliate = data.resume.affiliations;
+    copyAffiliate[index] = { ...editAffiliate };
+    setData({
+      ...data,
+      resume: {...data.resume, affiliations: copyAffiliate}
     })
   }
 
