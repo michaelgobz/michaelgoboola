@@ -753,6 +753,135 @@ const Edit = () => {
                 </Button>
               </div>
             </div>
+            <h1>Professional Trainings and Competitions</h1>
+            <div className="mt-10">
+              {data.resume.education.map((education, index) => (
+                <div className="mt-5" key={education.id}>
+                  <div className="flex items-center justify-between">
+                    <h1 className="text-2xl">{education.universityName}</h1>
+                    <Button
+                      // onClick={() => deleteProject(project.id)}
+                      type="primary"
+                    >
+                      Delete
+                    </Button>
+                  </div>
+
+                  <div className="flex items-center mt-5">
+                    <label className="w-1/5 text-lg opacity-50">Name</label>
+                    <input
+                      value={education.universityName}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityName: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-5">
+                    <label className="w-1/5 text-lg opacity-50">Dates</label>
+                    <input
+                      value={education.universityDate}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityDate: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <label className="w-1/5 text-lg opacity-50">Details</label>
+                    <textarea
+                      value={education.universityPara}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityPara: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></textarea>
+                  </div>
+                </div>
+              ))}
+              <div className="my-10">
+                <Button onClick={handleAddEducation} type="primary">
+                  Add Training/Competition/Hackerthon +
+                </Button>
+              </div>
+            </div>
+            <hr className="my-10"></hr>
+            <h1>Affiliations</h1>
+            <div className="mt-10">
+              {data.resume.education.map((education, index) => (
+                <div className="mt-5" key={education.id}>
+                  <div className="flex items-center justify-between">
+                    <h1 className="text-2xl">{education.universityName}</h1>
+                    <Button
+                      // onClick={() => deleteProject(project.id)}
+                      type="primary"
+                    >
+                      Delete
+                    </Button>
+                  </div>
+
+                  <div className="flex items-center mt-5">
+                    <label className="w-1/5 text-lg opacity-50">Name</label>
+                    <input
+                      value={education.universityName}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityName: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-5">
+                    <label className="w-1/5 text-lg opacity-50">Dates</label>
+                    <input
+                      value={education.universityDate}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityDate: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <label className="w-1/5 text-lg opacity-50">Details</label>
+                    <textarea
+                      value={education.universityPara}
+                      onChange={(e) =>
+                        handleEditEducation(index, {
+                          ...education,
+                          universityPara: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></textarea>
+                  </div>
+                </div>
+              ))}
+              <div className="my-10">
+                <Button onClick={handleAddEducation} type="primary">
+                  Add Affiliation +
+                </Button>
+              </div>
+            </div>
             <hr className="my-10"></hr>
             <div className="mt-10">
               <div className="flex">
