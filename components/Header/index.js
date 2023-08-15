@@ -1,6 +1,7 @@
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
+import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
@@ -37,35 +38,38 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    <img
+                    <Image
                       className="h-6"
-                      src={`/images/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
-                      }`}
-                    ></img>
+                      src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"
+                        }`}
+                      width={20}
+                      height={20}
+                      alt="theme-toggler"
+                    />
                   </Button>
                 )}
 
                 <Popover.Button>
-                  <img
+                  <Image
                     className="h-5"
-                    src={`/images/${
-                      !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
+                    src={`/images/${!open
+                      ? theme === "dark"
+                        ? "menu-white.svg"
+                        : "menu.svg"
+                      : theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
-                    }`}
-                  ></img>
+                      }`}
+                    alt="menu-toggler"
+                    width={30}
+                    height={30}
+                  />
                 </Popover.Button>
               </div>
             </div>
             <Popover.Panel
-              className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-white"
-              } shadow-md rounded-md`}
+              className={`absolute right-0 z-10 w-11/12 p-4 ${theme === "dark" ? "bg-slate-800" : "bg-white"
+                } shadow-md rounded-md`}
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
@@ -85,7 +89,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}
                   >
                     Contact
                   </Button>
@@ -108,7 +112,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}
                   >
                     Contact
                   </Button>
@@ -119,9 +123,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
-        } dark:text-white top-0 z-10 tablet:flex`}
+        className={`mt-10 hidden flex-row items-center justify-between sticky ${theme === "light" && "bg-white"
+          } dark:text-white top-0 z-10 tablet:flex`}
       >
         <h1
           onClick={() => router.push("/")}
@@ -145,17 +148,20 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
+                <Image
                   className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                  alt="theme-toggler"
+                  width={20}
+                  height={20}
+                />
               </Button>
             )}
           </div>
@@ -174,7 +180,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}>
               Contact
             </Button>
 
@@ -182,10 +188,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
+                <Image
                   className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                  alt="theme-toggler"
+                  width={20}
+                  height={20}
+                />
               </Button>
             )}
           </div>
