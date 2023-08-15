@@ -10,12 +10,12 @@
 ### How To Deploy
 
 - There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
+- here we are going to use netlify
+- Login into netlify with GitHub
 - after login select the forked repo or the repo you want to deploy
 - after selecting netlify will automatically deploy your website.
 
-Quickes way to deploy this repo -
+Quick way to deploy this repo -
 
 [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/michaelgobz/michaelgoboola)
 
