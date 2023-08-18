@@ -85,7 +85,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}
                   >
                     Contact
                   </Button>
@@ -108,7 +108,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}
                   >
                     Contact
                   </Button>
@@ -145,7 +145,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
@@ -174,7 +174,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}>
               Contact
             </Button>
 
