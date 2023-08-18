@@ -89,11 +89,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-<<<<<<< HEAD
-                    onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}
-=======
                     onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}
->>>>>>> 30ee8b082c71e9fa5abaccfaeadc0dfc5c54c419
                   >
                     Contact
                   </Button>
@@ -116,11 +112,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-<<<<<<< HEAD
-                    onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}
-=======
                     onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}
->>>>>>> 30ee8b082c71e9fa5abaccfaeadc0dfc5c54c419
                   >
                     Contact
                   </Button>
@@ -156,11 +148,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-<<<<<<< HEAD
-            <Button onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}>
-=======
+
             <Button onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}>
->>>>>>> 30ee8b082c71e9fa5abaccfaeadc0dfc5c54c419
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
@@ -192,11 +181,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-<<<<<<< HEAD
-            <Button onClick={() => window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd%40mbaaga.onmicrosoft.com/meetingtype/4H2RMggwpUab86nuLMBxcA2?anonymous&isanonymous=true")}>
-=======
+
             <Button onClick={() => window.open("mailto:michael@helixdynamics.onmicrosoft.com")}>
->>>>>>> 30ee8b082c71e9fa5abaccfaeadc0dfc5c54c419
               Contact
             </Button>
 

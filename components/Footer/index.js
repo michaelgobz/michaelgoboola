@@ -3,7 +3,7 @@ import Socials from "../Socials";
 import Link from "next/link";
 import Button from "../Button";
 
-const Footer = ({}) => {
+const Footer = ({ }) => {
   return (
     <>
       <div className="mt-5 laptop:mt-40 p-2 laptop:p-0">
@@ -16,7 +16,9 @@ const Footer = ({}) => {
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
               TOGETHER
             </h1>
-            <Button type="primary">Schedule a call</Button>
+            <Button type="primary" onClick={window.open("https://outlook.office.com/bookwithme/user/2e08b4c9ecd64d8cb374de35010ec9fd@mbaaga.onmicrosoft.com?anonymous&ep=plink")}>
+              Schedule a call
+            </Button>
             <div className="mt-10">
               <Socials />
             </div>
